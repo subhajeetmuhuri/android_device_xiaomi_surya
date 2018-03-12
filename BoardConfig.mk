@@ -122,6 +122,9 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
