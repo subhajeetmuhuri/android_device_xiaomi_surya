@@ -171,6 +171,12 @@ persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 persist.sys.sf.color_mode=9
 
+# Display - Post-processing
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.sensortype=2
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
