@@ -354,6 +354,9 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
+    fastbootd
+
+PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
 # Sensors
