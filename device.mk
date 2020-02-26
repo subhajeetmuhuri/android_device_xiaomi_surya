@@ -332,6 +332,10 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl
 
+# Recovery
+PRODUCT_PACKAGES += \
+    fastbootd
+
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
