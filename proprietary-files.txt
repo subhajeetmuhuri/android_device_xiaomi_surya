@@ -910,12 +910,10 @@ vendor/etc/sensors/sns_reg_config|3615a65f046554993265cf9faeb718002f73c1e0
 
 # Thermal - from surya V12.5.8.0.RJGINXM
 -vendor/bin/mi_thermald|2cb2d46219c6bc7005b61a6960b9f674049a586c
--vendor/bin/thermal-engine|7dd2cf5200b87c88dcfd3d18239bd9968efedb3c
 vendor/etc/thermal-4k.conf|1648b94b29fcbacd65a5695eccae404274d9e1e0
 vendor/etc/thermal-arvr.conf|33cbfff90543ceaedf7c4f0d45caf11e9ef9a52f
 vendor/etc/thermal-camera.conf|6882a03c248eb3462bcc2f40754ada2e3d069f08
 vendor/etc/thermal-chg-only.conf|d7affb7547a6f07267b8dddd9d7e549f9fdeb498
-vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/etc/thermal-map.conf|6072eb7de179825c85d5423c49069e3999810e3f
 vendor/etc/thermal-nolimits.conf|be2040b00b09f1b719c7deef7590af9f634ad694
 vendor/etc/thermal-normal.conf|e8b6686ff365e4f6860cb23c37a7fd6cefe3b946
