@@ -68,6 +68,10 @@ on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
 
+   # SELinux nodes, hide permissive state
+   chmod 0640 /sys/fs/selinux/enforce
+   chmod 0440 /sys/fs/selinux/policy
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
