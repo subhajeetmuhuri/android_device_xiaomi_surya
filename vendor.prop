@@ -191,6 +191,7 @@ ro.hardware.keystore_desede=true
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Media
+debug.media.transcoding.codec_max_operating_rate=120
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
