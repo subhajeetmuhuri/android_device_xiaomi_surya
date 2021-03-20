@@ -98,6 +98,10 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/libaudioparsers.so|b786d5a2a8f94edb11b5334bbe981dbd2633325f
 -vendor/lib/libqtigef.so|382167926386b8f0b809ba06bfe7be9d12613beb
 
+# Batterysecret
+-vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
+
 # Bluetooth
 -vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
