@@ -672,6 +672,9 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.elf|d398af20a41b3e2d73324048ddcc2916e643ef01
 vendor/firmware/ipa_fws.mdt|cab8319bf9362a162fb8349b6b32558f28a1f542
 
+# IR
+-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+
 # IRQ balance
 -vendor/bin/msm_irqbalance
 
