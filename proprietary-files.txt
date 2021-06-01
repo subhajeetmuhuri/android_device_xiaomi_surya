@@ -446,7 +446,7 @@ vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 -system_ext/bin/dpmd
 system_ext/etc/dpm/dpm.conf
 system_ext/etc/init/dpmd.rc
