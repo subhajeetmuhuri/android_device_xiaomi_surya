@@ -53,13 +53,10 @@ on init
     write /sys/block/sde/queue/read_ahead_kb 2048
     write /sys/block/sde/queue/nr_requests 256
 
-on init && property:ro.boot.hwc=GLOBAL
-    setprop ro.boot.product.hardware.sku davinci
+on init && property:ro.boot.hwname=*
+    setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
 
-on init && property:ro.boot.hwc=CN
-    setprop ro.boot.product.hardware.sku davinci
-
-on property:ro.boot.product.hardware.sku=davinci
+on property:ro.boot.product.hardware.sku=surya
     enable vendor.nfc_hal_service
 
 on fs

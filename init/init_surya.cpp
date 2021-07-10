@@ -73,40 +73,29 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 };
 
 void vendor_load_properties() {
-    std::string region;
-    std::string hardware_revision;
-    region = GetProperty("ro.boot.hwc", "GLOBAL");
-    hardware_revision = GetProperty("ro.boot.hwversion", "UNKNOWN");
+    std::string hardware_revision = GetProperty("ro.boot.hwversion", "");
+    std::string hwname = GetProperty("ro.boot.hwname", "");
 
     std::string model;
     std::string device;
     std::string fingerprint;
-    std::string description;
     std::string mod_device;
 
-    if (region == "GLOBAL") {
-        model = "Mi 9T";
-        device = "davinci";
-        fingerprint = "Xiaomi/davinci/davinci:10/QKQ1.190825.002/V12.0.3.0.QFJMIXM:user/release-keys";
-        description = "davinci-user 10 QKQ1.190825.002 V12.0.3.0.QFJMIXM release-keys";
-        mod_device = "davinci_global";
-    } else if (region == "CN") {
-        model = "Redmi K20";
-        device = "davinci";
-        fingerprint = "Xiaomi/davinci/davinci:10/QKQ1.190825.002/V12.0.3.0.QFJCNXM:user/release-keys";
-        description = "davinci-user 10 QKQ1.190825.002 V12.0.3.0.QFJCNXM release-keys";
-    } else if (region == "INDIA") {
-        model = "Redmi K20";
-        device = "davinciin";
-        fingerprint = "Xiaomi/davinciin/davinciin:10/QKQ1.190825.002/V12.0.3.0.QFJINXM:user/release-keys";
-        description = "davinciin-user 10 QKQ1.190825.002 V12.0.3.0.QFJINXM release-keys";
-        mod_device = "davinciin_in_global";
+    if (hwname == "karna") {
+        model = "M2007J20CI";
+        device = "karna";
+        mod_device = "surya_in_global";
+    } else {
+        model = "M2007J20CG";
+        device = "surya";
+        mod_device = "surya_global";
     }
+
+    fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.2.0.RJGEUXM:user/release-keys";
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
-    property_override("ro.build.description", description.c_str());
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
     }
