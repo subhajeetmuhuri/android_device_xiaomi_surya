@@ -74,6 +74,14 @@ vendor/etc/acdbdata/adsp_avs_config.acdb|07316aaca619fbceb5edc07e46fd0957e34afaa
 -vendor/lib/libadiertac.so|2e06f58eb33c540dd322c687c2d4f76fffc08145
 -vendor/lib/libaudcal.so|348d973172c4431657430b30009bb2b7c9fe5d10
 
+# Audio extensions - from surya V12.5.8.0.RJGINXM
+-vendor/lib/btaudio_offload_if.so|2573a358b1ab6ab104c927fdf6c6230f0af6465d
+-vendor/lib/liba2dpoffload.so|fd6421911c0dd7bf95e9cc2757f23ca935ee9ae0
+-vendor/lib/libhdmiedid.so|be762d2db061fbe9c9cb14e30993c0d9d43f5181
+-vendor/lib/libhfp.so|6f5fc3ae603d7848e88bf8ad70e6fc7c7af0e007
+-vendor/lib/libsndmonitor.so|d1c49170c519a7f1755caa37ab58259670161638
+-vendor/lib/libspkrprot.so|7732a6d15cb4238e3d20214991ec47d3066c6897
+
 # Audio firmware - from surya V12.5.8.0.RJGINXM
 vendor/firmware/tas256x_reg.bin|e947b68b8e1f8ffede952aabef048c10e147f9c8
 
@@ -83,9 +91,11 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libshoebox.so
 
-# Audio libraries - from surya V12.5.8.0.RJGINXM
--vendor/lib/btaudio_offload_if.so|2573a358b1ab6ab104c927fdf6c6230f0af6465d
+# Audio HAL - from surya V12.5.8.0.RJGINXM
+-vendor/lib/hw/audio.primary.sm6150.so|9498aefebbc341b8b91b0428edb2e42b3af9a536
 -vendor/lib/libadm.so|c5d8693dbec640d3366ad7620833b2e4387f3c01
+-vendor/lib/libaudio_log_utils.so|71ec4d31ad6c9e9a4bee8db7b5ab55b70ef7c4c3
+-vendor/lib/libaudioparsers.so|b786d5a2a8f94edb11b5334bbe981dbd2633325f
 -vendor/lib/libqtigef.so|382167926386b8f0b809ba06bfe7be9d12613beb
 
 # Bluetooth
