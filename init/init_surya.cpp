@@ -76,20 +76,22 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 void vendor_load_properties() {
     std::string hardware_revision = GetProperty("ro.boot.hwversion", "");
     std::string hwname = GetProperty("ro.boot.hwname", "");
+    std::string region = GetProperty("ro.boot.hwc", "");
 
     std::string model;
     std::string device;
     std::string fingerprint;
-    std::string mod_device;
 
     if (hwname == "karna") {
         model = "M2007J20CI";
         device = "karna";
-        mod_device = "surya_in_global";
     } else {
-        model = "M2007J20CG";
         device = "surya";
-        mod_device = "surya_global";
+
+        if (region == "THAI" || region == "THAI_PA")
+            model = "M2007J20CT";
+        else
+            model = "M2007J20CG";
     }
 
     fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.2.0.RJGEUXM:user/release-keys";
@@ -97,9 +99,5 @@ void vendor_load_properties() {
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
-    if (mod_device != "") {
-        property_override("ro.product.mod_device", mod_device.c_str());
-    }
-
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
 }
