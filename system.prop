@@ -11,6 +11,10 @@ ro.charger.enable_suspend=true
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# LCD features
+persist.lcd.cabc_mode=0
+persist.lcd.hbm_mode=0
+
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
