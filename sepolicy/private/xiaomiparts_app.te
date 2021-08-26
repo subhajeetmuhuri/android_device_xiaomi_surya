@@ -11,6 +11,7 @@ allow xiaomiparts_app {
     content_capture_service
     game_service
     gpu_service
+    media_session_service
     mediaserver_service
     netstats_service
     surfaceflinger_service
