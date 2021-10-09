@@ -45,6 +45,12 @@ on fs
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
 
+    rm /cache/boot_lc_main.txt
+    rm /cache/boot_dmesg.txt
+
+    start boot_lc_main
+    start boot_dmesg
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
@@ -122,3 +128,17 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     group nfc
     writepid /dev/cpuset/system-background/tasks
     disabled
+
+service boot_lc_main /system/bin/logcat -f /cache/boot_lc_main.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_dmesg /system/bin/sh -c "dmesg -w > /cache/boot_dmesg.txt"
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
