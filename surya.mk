@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,8 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_surya.mk \
-    $(LOCAL_DIR)/surya.mk
+# Inherit AOSP product configuration
+$(call inherit-product, device/xiaomi/surya/aosp_surya.mk)
 
-COMMON_LUNCH_CHOICES := \
-    aosp_surya-user \
-    aosp_surya-userdebug \
-    aosp_surya-eng \
-    surya-userdebug
+# Remove AOSP prefix from product name
+PRODUCT_NAME := surya
