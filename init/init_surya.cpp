@@ -94,9 +94,6 @@ void vendor_load_properties() {
             model = "M2007J20CG";
     }
 
-    fingerprint = "POCO/surya_eea/surya:11/RKQ1.200826.002/V12.5.2.0.RJGEUXM:user/release-keys";
-
-    set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
