@@ -393,6 +393,9 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
+PRODUCT_PACKAGES += \
+    libgui-shim
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
