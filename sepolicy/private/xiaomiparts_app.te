@@ -1,5 +1,6 @@
 type persist_lcd_prop, property_type;
 type xiaomiparts_app, domain;
+typeattribute xiaomiparts_app mlstrustedsubject;
 
 app_domain(xiaomiparts_app)
 
