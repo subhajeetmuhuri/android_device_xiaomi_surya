@@ -1,4 +1,4 @@
-type persist_lcd_prop, property_type;
+vendor_restricted_prop(persist_lcd_prop)
 type xiaomiparts_app, domain;
 typeattribute xiaomiparts_app mlstrustedsubject;
 
