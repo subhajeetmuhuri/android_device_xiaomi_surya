@@ -310,11 +310,6 @@ vendor/etc/camera/watermark_font_2300_3199.dat|470c10429888b89966af5eb610b13b843
 # Camera firmware - from surya V12.5.8.0.RJGINXM
 vendor/firmware/CAMERA_ICP.elf|4eccbb6081b3171414e838f62f7d7936b8181594
 
-# Camera Megvii - from surya V12.5.8.0.RJGINXM
-vendor/etc/camera/megviifacepp_0_5_2_model|a2b8751f04d94f0634453c40426e66b0a1283da1
--vendor/lib64/libMegviiFacepp-0.5.2.so|a439145c3700d62446af21fe385775e6d5cb1a9a
--vendor/lib64/libmegface.so|8f67d986f23a110e48a2c6c57024ac3dee4993aa
-
 # Camera sensors - from surya V12.5.8.0.RJGINXM
 -vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so|3f3d8373dfef7897a144674d2bbc18ff90c8acac
 -vendor/lib64/camera/com.qti.sensor.ofilm_imx682.so|aba4ee0b17ed289cf08653acfd32df867f2ab9bb
