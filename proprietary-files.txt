@@ -427,7 +427,6 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 -vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Fingerprint - from davinci V12.5.2.0.RFJCNXM
--vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sm6150.so|679daa0f187bf648acbb9c894efd36e2ebf65eb1
 -vendor/lib64/libgf_hal.so|2e32b1f5f97c8bb028226d9b7e871c3435115d37
 
 # FM
