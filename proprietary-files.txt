@@ -842,6 +842,3 @@ vendor/firmware/goodix_gt9886_limit_f10_second.tporder|d8f38e5ee33d05353d38cc31b
 
 # WLAN - from davinci V12.5.2.0.RFJCNXM
 -vendor/bin/cnss-daemon|0a39a83e0118c04f90a16c9a6152aaed4fb26a00
-
-# Xiaomi MAC
--vendor/bin/nv_mac
