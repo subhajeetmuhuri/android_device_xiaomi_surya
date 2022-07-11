@@ -53,7 +53,6 @@ PRODUCT_PACKAGES += \
     audio.primary.sm6150 \
     audio.usb.default \
     audio.r_submix.default \
-    audio_amplifier.sm6150 \
     sound_trigger.primary.sm6150
 
 PRODUCT_PACKAGES += \
