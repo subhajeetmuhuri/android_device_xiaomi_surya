@@ -105,7 +105,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera - from davinci V12.5.2.0.RFJCNXM
--vendor/bin/remosaic_daemon|1f092ffcd4b471ef2a540e7a1882eb5d87cd984b
 vendor/etc/camera/camxoverridesettings.txt|967d285e6f55b0f36bfb690e8244a23d050d4fdb
 vendor/etc/camera/eisoverridesettings.txt|4ea9ba43f55eaf0ac3106a0b63c49654af741270
 vendor/etc/camera/golden_rear_dc_cal_wu.bin|1a1f60f07b46d09d36fa3380e3e8b1bbb412937d
