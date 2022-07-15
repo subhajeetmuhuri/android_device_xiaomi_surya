@@ -75,8 +75,10 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 void vendor_load_properties() {
     std::string region;
     std::string hardware_revision;
+    std::string hwname;
     region = GetProperty("ro.boot.hwc", "GLOBAL");
     hardware_revision = GetProperty("ro.boot.hwversion", "UNKNOWN");
+    hwname = GetProperty("ro.boot.hwname", "surya");
 
     std::string model;
     std::string device;
@@ -84,23 +86,18 @@ void vendor_load_properties() {
     std::string description;
     std::string mod_device;
 
-    if (region == "GLOBAL") {
-        model = "Mi 9T";
-        device = "davinci";
-        fingerprint = "Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.1.4.0.RFJMIXM:user/release-keys";
-        description = "davinci-user 11 RKQ1.200826.002 V12.1.4.0.RFJMIXM release-keys";
-        mod_device = "davinci_global";
-    } else if (region == "CN") {
-        model = "Redmi K20";
-        device = "davinci";
-        fingerprint = "Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.5.2.0.RFJCNXM:user/release-keys";
-        description = "davinci-user 11 RKQ1.200826.002 V12.5.2.0.RFJCNXM release-keys";
-    } else if (region == "INDIA") {
-        model = "Redmi K20";
-        device = "davinciin";
-        fingerprint = "Xiaomi/davinciin/davinciin:11/RKQ1.200826.002/V12.1.4.0.RFJINXM:user/release-keys";
-        description = "davinciin-user 11 RKQ1.200826.002 V12.1.4.0.RFJINXM release-keys";
-        mod_device = "davinciin_in_global";
+    if (hwname == "karna") {
+        model = "M2007J20CI";
+        device = "karna";
+        fingerprint = "POCO/karna_in/karna:11/RKQ1.200826.002/V12.5.8.0.RJGINXM:user/release-keys";
+        description = "karna_in-user 11 RKQ1.200826.002 V12.5.8.0.RJGINXM release-keys";
+        mod_device = "surya_in_global";
+    } else {
+        model = "M2007J20CG";
+        device = "surya";
+        fingerprint = "POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.8.0.RJGMIXM:user/release-keys";
+        description = "surya_global-user 11 RKQ1.200826.002 V12.5.8.0.RJGMIXM release-keys";
+        mod_device = "surya_global";
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
