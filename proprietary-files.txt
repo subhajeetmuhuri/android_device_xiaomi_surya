@@ -122,7 +122,7 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 -system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera - from surya V12.5.8.0.RJGINXM
--vendor/lib64/hw/camera.qcom.so|ebd7e387dc7cc0e4411c024076700bc16d7d1103
+-vendor/lib64/hw/camera.qcom.so|3188f91242f8533b0079595a6d29b9a682b5575b
 -vendor/lib64/hw/com.qti.chi.override.so|8327d6cce1a5676a086734196800786e096bd3d9
 -vendor/lib64/libFaceGrade.so|b3f316c56ab78ec550e8248c8d3ae7ca720d009e
 -vendor/lib64/libHalSuperSensorServer.so|faa4d602f226da8d92b197f49ffe29f0ad506426
@@ -307,13 +307,13 @@ vendor/etc/camera/score_icon.png|8580e0abbf401a09c6581b82e9c00cd78fb8951f
 vendor/etc/camera/vidhance_calibration|9b7e71643edba9d6e6f193051ee4d7d9df0a17a1
 vendor/etc/camera/watermark_font_2300_3199.dat|470c10429888b89966af5eb610b13b843a1a0248
 
-# Camera face detection - from surya V12.5.8.0.RJGINXM
-vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model|a2b8751f04d94f0634453c40426e66b0a1283da1
--vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so|b52fa2d205cf8e83195322259a9586cb5ec0cb33
--vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so|807bd1a687d17a1a9e7b0ecb45efad1a0b16fcca
-
 # Camera firmware - from surya V12.5.8.0.RJGINXM
 vendor/firmware/CAMERA_ICP.elf|4eccbb6081b3171414e838f62f7d7936b8181594
+
+# Camera Megvii - from surya V12.5.8.0.RJGINXM
+vendor/etc/camera/megviifacepp_0_5_2_model|a2b8751f04d94f0634453c40426e66b0a1283da1
+-vendor/lib64/libMegviiFacepp-0.5.2.so|a439145c3700d62446af21fe385775e6d5cb1a9a
+-vendor/lib64/libmegface.so|8f67d986f23a110e48a2c6c57024ac3dee4993aa
 
 # Camera sensors - from surya V12.5.8.0.RJGINXM
 -vendor/lib64/camera/com.qti.sensor.ofilm_hi259.so|3f3d8373dfef7897a144674d2bbc18ff90c8acac
