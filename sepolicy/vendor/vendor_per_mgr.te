@@ -1,1 +1,0 @@
-dontaudit vendor_per_mgr vendor_debugfs_ipc:dir search;

@@ -1,5 +1,3 @@
 allow kernel per_boot_file:file r_file_perms;
 
 dontaudit kernel self:qipcrtr_socket create;
-dontaudit kernel vendor_debugfs_wlan:dir search;
-dontaudit kernel vendor_debugfs_ipc:dir search;
